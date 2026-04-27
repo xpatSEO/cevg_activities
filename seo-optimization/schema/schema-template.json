@@ -1,0 +1,145 @@
+{
+  "_comment": "Template JSON-LD à injecter dans le <head> de chaque hub /activity-category/<slug>. Remplacer les placeholders {VAR}. Trois @graph: Service, FAQPage, BreadcrumbList.",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "{URL_PAGE}#service",
+      "name": "{ACTIVITE} EVG",
+      "alternateName": "{MC_PRINCIPAL}",
+      "description": "{META_DESCRIPTION}",
+      "serviceType": "Activité EVG",
+      "category": "Enterrement de vie de garçon",
+      "image": "{IMAGE_PRINCIPALE_URL}",
+      "url": "{URL_PAGE}",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://www.crazy-evg.com/#organization",
+        "name": "Crazy-EVG",
+        "url": "https://www.crazy-evg.com",
+        "logo": "https://www.crazy-evg.com/logo.png",
+        "telephone": "+33176215730",
+        "email": "contact@crazy-evg.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8 rue du Faubourg Poissonnière",
+          "postalCode": "75010",
+          "addressLocality": "Paris",
+          "addressCountry": "FR"
+        }
+      },
+      "areaServed": [
+        { "@type": "City", "name": "{DESTINATION_1}" },
+        { "@type": "City", "name": "{DESTINATION_2}" },
+        { "@type": "City", "name": "{DESTINATION_N}" }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Groupe d'amis - Enterrement de vie de garçon",
+        "suggestedMinAge": 18
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": "{PRIX_MIN}",
+        "highPrice": "{PRIX_MAX}",
+        "offerCount": "{N_DESTINATIONS}",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "_comment_optional": "Inclure UNIQUEMENT si avis vérifiés Trustpilot disponibles pour cette activité",
+        "@type": "AggregateRating",
+        "ratingValue": "{NOTE_MOYENNE}",
+        "reviewCount": "{NB_AVIS}",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "{URL_PAGE}#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien coûte un {ACTIVITE} pour un EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{REPONSE_PRIX}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle est la durée d'une session de {ACTIVITE} ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{REPONSE_DUREE}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il un niveau particulier pour faire {ACTIVITE} ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{REPONSE_NIVEAU}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "À partir de combien de personnes peut-on réserver {ACTIVITE} ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{REPONSE_GROUPE}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que faut-il prévoir pour {ACTIVITE} ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{REPONSE_MATERIEL}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dans quelles villes peut-on faire {ACTIVITE} pour un EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{REPONSE_DESTINATIONS}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment réserver {ACTIVITE} pour un EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Demandez un devis en 1 minute sur Crazy-EVG. Notre équipe revient vers vous sous 24h avec un programme sur mesure et un tarif détaillé pour votre groupe."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{URL_PAGE}#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.crazy-evg.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Activités EVG",
+          "item": "https://www.crazy-evg.com/activites-evg"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{ACTIVITE} EVG",
+          "item": "{URL_PAGE}"
+        }
+      ]
+    }
+  ]
+}
