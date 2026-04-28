@@ -57,6 +57,47 @@ HUB_CONFIG.update(_load_batch("hub_config_p2_batch2", "HUB_CONFIG_BATCH_2"))
 HUB_CONFIG.update(_load_batch("hub_config_p2_batch3", "HUB_CONFIG_BATCH_3"))
 HUB_CONFIG.update(_load_batch("hub_config_p2_batch4", "HUB_CONFIG_BATCH_4"))
 HUB_CONFIG.update(_load_batch("hub_config_p2_batch5", "HUB_CONFIG_BATCH_5"))
+HUB_CONFIG.update(_load_batch("hub_config_p3", "HUB_CONFIG_P3"))
+
+
+# Compléter les SISTER_HUBS et PRICES pour les hubs P3
+SISTER_HUBS = dict(SISTER_HUBS)
+SISTER_HUBS.update({
+    "Conduite Ferrari": ["karting-evg", "quad-buggy-evg",
+                         "conduite-char-d-assaut-evg", "jet-ski-evg",
+                         "flyboard-evg"],
+    "Parapente": ["chute-libre-evg", "saut-elastique-evg",
+                  "saut-en-parachute-evg", "canyoning-evg",
+                  "rafting-eaux-vives-evg"],
+    "Laser Game": ["paintball-evg", "airsoft-battle-evg",
+                   "escape-room-evg", "footbulle-evg",
+                   "football-evg"],
+    "Canyoning": ["rafting-eaux-vives-evg", "hydrospeed-evg",
+                  "parapente-evg", "saut-elastique-evg",
+                  "quad-buggy-evg"],
+    "Saut en Parachute": ["saut-elastique-evg", "chute-libre-evg",
+                          "parapente-evg", "faux-saut-elastique-evg",
+                          "flyboard-evg"],
+    "Escape Room": ["laser-game-evg", "paintball-evg",
+                    "kidnapping-evg", "footbulle-evg",
+                    "airsoft-battle-evg"],
+    "Hydrospeed": ["rafting-eaux-vives-evg", "canyoning-evg",
+                   "jet-ski-evg", "flyboard-evg",
+                   "croisiere-bateau-evg"],
+    "Rafting Eaux Vives": ["canyoning-evg", "hydrospeed-evg",
+                           "parapente-evg", "saut-elastique-evg",
+                           "quad-buggy-evg"],
+})
+PRICES.update({
+    "Conduite Ferrari": (149, 349, "person"),
+    "Parapente": (89, 159, "person"),
+    "Laser Game": (19, 39, "person"),
+    "Canyoning": (59, 99, "person"),
+    "Saut en Parachute": (199, 299, "person"),
+    "Escape Room": (19, 39, "person"),
+    "Hydrospeed": (49, 99, "person"),
+    "Rafting Eaux Vives": (49, 99, "person"),
+})
 
 
 def build_pricing_table(low: int, high: int, unit: str, n_dest: int, hub: str, price_note: str = "") -> str:
