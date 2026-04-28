@@ -1,0 +1,231 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.crazy-evg.com/activity-category/striptease-domicile-evg#service",
+      "name": "Strip-tease à domicile EVG",
+      "alternateName": "strip tease a domicile​",
+      "description": "Strip-tease à domicile pour son EVG : showgirl pro à votre appart ou hôtel, dans 25 destinations. Discret, simple, efficace. Devis en 1 minute.",
+      "serviceType": "Activité EVG",
+      "category": "Enterrement de vie de garçon",
+      "url": "https://www.crazy-evg.com/activity-category/striptease-domicile-evg",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://www.crazy-evg.com/#organization",
+        "name": "Crazy-EVG",
+        "url": "https://www.crazy-evg.com",
+        "telephone": "+33176215730",
+        "email": "contact@crazy-evg.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8 rue du Faubourg Poissonnière",
+          "postalCode": "75010",
+          "addressLocality": "Paris",
+          "addressCountry": "FR"
+        }
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Albufeira"
+        },
+        {
+          "@type": "City",
+          "name": "Annecy"
+        },
+        {
+          "@type": "City",
+          "name": "Barcelone"
+        },
+        {
+          "@type": "City",
+          "name": "Berlin"
+        },
+        {
+          "@type": "City",
+          "name": "Bordeaux"
+        },
+        {
+          "@type": "City",
+          "name": "Bruxelles"
+        },
+        {
+          "@type": "City",
+          "name": "Bucarest"
+        },
+        {
+          "@type": "City",
+          "name": "Budapest"
+        },
+        {
+          "@type": "City",
+          "name": "Cracovie"
+        },
+        {
+          "@type": "City",
+          "name": "Deauville"
+        },
+        {
+          "@type": "City",
+          "name": "Ibiza"
+        },
+        {
+          "@type": "City",
+          "name": "Lisbonne"
+        },
+        {
+          "@type": "City",
+          "name": "Lyon"
+        },
+        {
+          "@type": "City",
+          "name": "Madrid"
+        },
+        {
+          "@type": "City",
+          "name": "Majorque"
+        },
+        {
+          "@type": "City",
+          "name": "Marbella"
+        },
+        {
+          "@type": "City",
+          "name": "Milan"
+        },
+        {
+          "@type": "City",
+          "name": "Montpellier"
+        },
+        {
+          "@type": "City",
+          "name": "Paris"
+        },
+        {
+          "@type": "City",
+          "name": "Porto"
+        },
+        {
+          "@type": "City",
+          "name": "Prague"
+        },
+        {
+          "@type": "City",
+          "name": "Varsovie"
+        },
+        {
+          "@type": "City",
+          "name": "Villa EVG Les Etisseaux"
+        },
+        {
+          "@type": "City",
+          "name": "Villa EVG Luigny"
+        },
+        {
+          "@type": "City",
+          "name": "Villa EVG Radar"
+        }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Groupe d'amis - Enterrement de vie de garçon",
+        "suggestedMinAge": 18
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": "150",
+        "highPrice": "350",
+        "offerCount": "25",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.crazy-evg.com/activity-category/striptease-domicile-evg#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien coûte un striptease domicile pour un EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le tarif d'un striptease domicile EVG est compris entre 150 € et 350 € en forfait pour le groupe. Le prix varie selon la destination, la taille du groupe et les options choisies. Demandez un devis en 1 minute pour un tarif personnalisé."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de temps dure un striptease domicile EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La durée varie selon la formule, généralement entre 1h et 4h transferts inclus. Consultez la fiche détaillée de chaque destination pour le programme précis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il un niveau particulier pour faire un striptease domicile EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aucun niveau requis. Toutes nos sessions sont encadrées par un instructeur professionnel qui assure le briefing et l'accompagnement. L'activité est accessible aux débutants."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "À partir de combien de personnes peut-on réserver un striptease domicile EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La majorité de nos partenaires acceptent les groupes à partir de 4 à 6 personnes. Les conditions exactes varient selon la destination. Au-delà de 12-15 participants, plusieurs créneaux sont organisés."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que faut-il prévoir pour un striptease domicile EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Une pièce d'identité valide est généralement demandée. Le matériel et l'encadrement sont fournis par notre partenaire local. Prévoyez une tenue adaptée et des chaussures fermées. Détails complets fournis à la réservation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dans quelles villes peut-on faire un striptease domicile EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'activité striptease domicile est disponible dans 25 destinations Crazy-EVG : Albufeira, Annecy, Barcelone, Berlin, Bordeaux, Bruxelles, Bucarest, Budapest, Cracovie, Deauville, Ibiza, Lisbonne, Lyon, Madrid, Majorque, Marbella, Milan, Montpellier, Paris, Porto, Prague, Varsovie, Villa EVG Les Etisseaux, Villa EVG Luigny, Villa EVG Radar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment réserver un striptease domicile EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Demandez un devis en 1 minute sur Crazy-EVG. Notre équipe revient vers vous sous 24h avec un programme sur mesure et un tarif détaillé pour votre groupe."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.crazy-evg.com/activity-category/striptease-domicile-evg#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.crazy-evg.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Activités EVG",
+          "item": "https://www.crazy-evg.com/activites-evg"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Strip-tease à domicile EVG : show privé",
+          "item": "https://www.crazy-evg.com/activity-category/striptease-domicile-evg"
+        }
+      ]
+    }
+  ]
+}

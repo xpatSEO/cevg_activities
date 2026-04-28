@@ -1,0 +1,139 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.crazy-evg.com/activity-category/hydrospeed-evg#service",
+      "name": "Hydrospeed EVG",
+      "alternateName": "hydrospeed evg",
+      "description": "Hydrospeed EVG : descente de rapides en flotteur individuel, encadré par un guide. Sensations aquatiques fortes pour un enterrement original.",
+      "serviceType": "Activité EVG",
+      "category": "Enterrement de vie de garçon",
+      "url": "https://www.crazy-evg.com/activity-category/hydrospeed-evg",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://www.crazy-evg.com/#organization",
+        "name": "Crazy-EVG",
+        "url": "https://www.crazy-evg.com",
+        "telephone": "+33176215730",
+        "email": "contact@crazy-evg.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8 rue du Faubourg Poissonnière",
+          "postalCode": "75010",
+          "addressLocality": "Paris",
+          "addressCountry": "FR"
+        }
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Annecy"
+        },
+        {
+          "@type": "City",
+          "name": "Bratislava"
+        }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Groupe d'amis - Enterrement de vie de garçon",
+        "suggestedMinAge": 18
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": "49",
+        "highPrice": "99",
+        "offerCount": "2",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.crazy-evg.com/activity-category/hydrospeed-evg#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien coûte un hydrospeed pour un EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le tarif d'un hydrospeed EVG est compris entre 49 € et 99 € par personne. Le prix varie selon la destination, la taille du groupe et les options choisies. Demandez un devis en 1 minute pour un tarif personnalisé."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de temps dure un hydrospeed EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La durée varie selon la formule, généralement entre 1h et 4h transferts inclus. Consultez la fiche détaillée de chaque destination pour le programme précis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il un niveau particulier pour faire un hydrospeed EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aucun niveau requis. Toutes nos sessions sont encadrées par un instructeur professionnel qui assure le briefing et l'accompagnement. L'activité est accessible aux débutants."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "À partir de combien de personnes peut-on réserver un hydrospeed EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La majorité de nos partenaires acceptent les groupes à partir de 4 à 6 personnes. Les conditions exactes varient selon la destination. Au-delà de 12-15 participants, plusieurs créneaux sont organisés."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que faut-il prévoir pour un hydrospeed EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Une pièce d'identité valide est généralement demandée. Le matériel et l'encadrement sont fournis par notre partenaire local. Prévoyez une tenue adaptée et des chaussures fermées. Détails complets fournis à la réservation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dans quelles villes peut-on faire un hydrospeed EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'activité hydrospeed est disponible dans 2 destinations Crazy-EVG : Annecy, Bratislava."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment réserver un hydrospeed EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Demandez un devis en 1 minute sur Crazy-EVG. Notre équipe revient vers vous sous 24h avec un programme sur mesure et un tarif détaillé pour votre groupe."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.crazy-evg.com/activity-category/hydrospeed-evg#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.crazy-evg.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Activités EVG",
+          "item": "https://www.crazy-evg.com/activites-evg"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hydrospeed EVG : descente de rivière en flotteur",
+          "item": "https://www.crazy-evg.com/activity-category/hydrospeed-evg"
+        }
+      ]
+    }
+  ]
+}
