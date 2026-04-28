@@ -11,6 +11,10 @@ seo-optimization/
 ├── generate_titles_metas.py           Produit le CSV des 42 Title/Meta
 ├── generate_jsonld.py                 Génère 42 fichiers JSON-LD (Service+FAQ+Breadcrumb)
 ├── generate_p2_sheets.py              Génère 27 fiches de production P2
+├── generate_html.py                   Génère HTML pour P2 (27) + P3 (8) — 35 pages
+├── build_master_csv.py                Consolide les 42 pages dans master.csv
+├── hub_config_p2_batch{1..5}.py       Seeds éditoriaux P2 (intro, args, exp_intro)
+├── hub_config_p3.py                   Seeds éditoriaux P3
 ├── briefs/
 │   ├── GABARIT-EDITORIAL.md           Gabarit réutilisable (9 blocs, patterns, checklist)
 │   └── P3-DECISIONS.md                Décisions par page froide (optimiser/fusionner/désindexer)
@@ -29,9 +33,12 @@ seo-optimization/
 │   ├── schema-shooting-EXAMPLE.json   Exemple rempli (référence)
 │   └── generated/                     42 fichiers JSON-LD prêts à injecter
 │       └── *.json
+├── html/                              35 pages HTML générées (P2 + P3)
+│   └── *.html
 └── exports/
     ├── hubs_enriched.csv              42 hubs × données agrégées du fichier 2
-    └── titles_metas.csv               42 nouveaux Title + Meta + priorité
+    ├── titles_metas.csv               42 nouveaux Title + Meta + priorité
+    └── master.csv                     ⭐ Master consolidé : 42 pages × HTML × JSON-LD
 ```
 
 ## Reproduire les exports
@@ -41,6 +48,9 @@ python3 seo-optimization/aggregate.py
 python3 seo-optimization/generate_titles_metas.py
 python3 seo-optimization/generate_jsonld.py
 python3 seo-optimization/generate_p2_sheets.py
+python3 seo-optimization/generate_html.py P2     # 27 HTML P2
+python3 seo-optimization/generate_html.py P3     # 8 HTML P3
+python3 seo-optimization/build_master_csv.py     # ⭐ Master CSV consolidé
 ```
 
 ## Roadmap proposée
