@@ -1,0 +1,203 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.crazy-evg.com/activity-category/tournee-bars-evg#service",
+      "name": "Tournée des bars EVG",
+      "alternateName": "tournee bars evg​",
+      "description": "Tournée des bars EVG : pub crawl encadré dans 18 destinations. Bars sélectionnés, shots offerts, ambiance garantie. Devis en 1 minute.",
+      "serviceType": "Activité EVG",
+      "category": "Enterrement de vie de garçon",
+      "url": "https://www.crazy-evg.com/activity-category/tournee-bars-evg",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://www.crazy-evg.com/#organization",
+        "name": "Crazy-EVG",
+        "url": "https://www.crazy-evg.com",
+        "telephone": "+33176215730",
+        "email": "contact@crazy-evg.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8 rue du Faubourg Poissonnière",
+          "postalCode": "75010",
+          "addressLocality": "Paris",
+          "addressCountry": "FR"
+        }
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Albufeira"
+        },
+        {
+          "@type": "City",
+          "name": "Amsterdam"
+        },
+        {
+          "@type": "City",
+          "name": "Berlin"
+        },
+        {
+          "@type": "City",
+          "name": "Bruxelles"
+        },
+        {
+          "@type": "City",
+          "name": "Bucarest"
+        },
+        {
+          "@type": "City",
+          "name": "Budapest"
+        },
+        {
+          "@type": "City",
+          "name": "Cracovie"
+        },
+        {
+          "@type": "City",
+          "name": "Ibiza"
+        },
+        {
+          "@type": "City",
+          "name": "Lisbonne"
+        },
+        {
+          "@type": "City",
+          "name": "Lyon"
+        },
+        {
+          "@type": "City",
+          "name": "Madrid"
+        },
+        {
+          "@type": "City",
+          "name": "Malte"
+        },
+        {
+          "@type": "City",
+          "name": "Marbella"
+        },
+        {
+          "@type": "City",
+          "name": "Paris"
+        },
+        {
+          "@type": "City",
+          "name": "Porto"
+        },
+        {
+          "@type": "City",
+          "name": "Prague"
+        },
+        {
+          "@type": "City",
+          "name": "Rome"
+        },
+        {
+          "@type": "City",
+          "name": "Varsovie"
+        }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Groupe d'amis - Enterrement de vie de garçon",
+        "suggestedMinAge": 18
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": "29",
+        "highPrice": "79",
+        "offerCount": "18",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.crazy-evg.com/activity-category/tournee-bars-evg#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien coûte un tournee bars pour un EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le tarif d'un tournee bars EVG est compris entre 29 € et 79 € par personne. Le prix varie selon la destination, la taille du groupe et les options choisies. Demandez un devis en 1 minute pour un tarif personnalisé."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de temps dure un tournee bars EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La durée varie selon la formule, généralement entre 1h et 4h transferts inclus. Consultez la fiche détaillée de chaque destination pour le programme précis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il un niveau particulier pour faire un tournee bars EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aucun niveau requis. Toutes nos sessions sont encadrées par un instructeur professionnel qui assure le briefing et l'accompagnement. L'activité est accessible aux débutants."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "À partir de combien de personnes peut-on réserver un tournee bars EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La majorité de nos partenaires acceptent les groupes à partir de 4 à 6 personnes. Les conditions exactes varient selon la destination. Au-delà de 12-15 participants, plusieurs créneaux sont organisés."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que faut-il prévoir pour un tournee bars EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Une pièce d'identité valide est généralement demandée. Le matériel et l'encadrement sont fournis par notre partenaire local. Prévoyez une tenue adaptée et des chaussures fermées. Détails complets fournis à la réservation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dans quelles villes peut-on faire un tournee bars EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'activité tournee bars est disponible dans 18 destinations Crazy-EVG : Albufeira, Amsterdam, Berlin, Bruxelles, Bucarest, Budapest, Cracovie, Ibiza, Lisbonne, Lyon, Madrid, Malte, Marbella, Paris, Porto, Prague, Rome, Varsovie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment réserver un tournee bars EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Demandez un devis en 1 minute sur Crazy-EVG. Notre équipe revient vers vous sous 24h avec un programme sur mesure et un tarif détaillé pour votre groupe."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.crazy-evg.com/activity-category/tournee-bars-evg#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.crazy-evg.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Activités EVG",
+          "item": "https://www.crazy-evg.com/activites-evg"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tournée des bars EVG : pub crawl entre potes",
+          "item": "https://www.crazy-evg.com/activity-category/tournee-bars-evg"
+        }
+      ]
+    }
+  ]
+}

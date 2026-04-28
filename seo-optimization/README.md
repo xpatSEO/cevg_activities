@@ -9,19 +9,26 @@ seo-optimization/
 ├── README.md                          (ce fichier)
 ├── aggregate.py                       Croise fichiers 1 et 2 → CSV enrichi
 ├── generate_titles_metas.py           Produit le CSV des 42 Title/Meta
+├── generate_jsonld.py                 Génère 42 fichiers JSON-LD (Service+FAQ+Breadcrumb)
+├── generate_p2_sheets.py              Génère 27 fiches de production P2
 ├── briefs/
-│   └── GABARIT-EDITORIAL.md           Gabarit réutilisable (9 blocs, patterns, checklist)
-├── pilots/
-│   ├── 01-shooting-evg.md             Page pilote 1 — Stand de tir (P1 quick win)
-│   ├── 02-kidnapping-evg.md           Page pilote 2 — Kidnapping (P1 quick win)
-│   ├── 03-corrida-evg.md              Page pilote 3 — Corrida (P1 quick win)
-│   ├── 04-sexy-reveil-evg.md          Page pilote 4 — Réveil coquin (P1 quick win)
-│   ├── 05-striptease-domicile-evg.md  Page pilote 5 — Strip-tease à domicile (P1, 25 dest.)
-│   ├── 06-car-smash-evg.md            Page pilote 6 — Car Smash (P1 quick win)
-│   └── 07-conduite-char-d-assaut-evg.md  Page pilote 7 — EVG tank (P1 quick win)
+│   ├── GABARIT-EDITORIAL.md           Gabarit réutilisable (9 blocs, patterns, checklist)
+│   └── P3-DECISIONS.md                Décisions par page froide (optimiser/fusionner/désindexer)
+├── pilots/                            7 pages P1 rédigées en plein (HTML prêt à coller)
+│   ├── 01-shooting-evg.md
+│   ├── 02-kidnapping-evg.md
+│   ├── 03-corrida-evg.md
+│   ├── 04-sexy-reveil-evg.md
+│   ├── 05-striptease-domicile-evg.md
+│   ├── 06-car-smash-evg.md
+│   └── 07-conduite-char-d-assaut-evg.md
+├── p2-sheets/                         27 fiches de production P2 (Title/Meta/data/maillage)
+│   └── *.md                           Une fiche par hub, pour le rédacteur
 ├── schema/
-│   ├── schema-template.json           Template JSON-LD (Service + FAQPage + BreadcrumbList)
-│   └── schema-shooting-EXAMPLE.json   Exemple rempli pour la page Shooting
+│   ├── schema-template.json           Template JSON-LD (placeholders)
+│   ├── schema-shooting-EXAMPLE.json   Exemple rempli (référence)
+│   └── generated/                     42 fichiers JSON-LD prêts à injecter
+│       └── *.json
 └── exports/
     ├── hubs_enriched.csv              42 hubs × données agrégées du fichier 2
     └── titles_metas.csv               42 nouveaux Title + Meta + priorité
@@ -32,6 +39,8 @@ seo-optimization/
 ```bash
 python3 seo-optimization/aggregate.py
 python3 seo-optimization/generate_titles_metas.py
+python3 seo-optimization/generate_jsonld.py
+python3 seo-optimization/generate_p2_sheets.py
 ```
 
 ## Roadmap proposée
@@ -39,14 +48,16 @@ python3 seo-optimization/generate_titles_metas.py
 | Phase | Durée | Livrable |
 |---|---|---|
 | 1. Métas | 1 sem. | Déployer les 42 Title/Meta du CSV `titles_metas.csv` |
-| 2. Quick wins | 3-4 sem. | Rédiger les 10 pages P1 selon gabarit (7 pilotes prêts : Shooting, Kidnapping, Corrida, Réveil coquin, Strip-tease domicile, Car Smash, Char d'Assaut) |
-| 3. Sleeping giants | 2-3 sem. | Rédiger les 8 pages P2 |
-| 4. Cold pages | 2 sem. | Rédiger / fusionner / désindexer les pages P3 |
-| 5. Schema | 1 sem. | Déployer JSON-LD sur les 42 pages via le template |
+| 2. Quick wins (P1) | 3-4 sem. | 7 pilotes prêts à intégrer (Shooting, Kidnapping, Corrida, Réveil coquin, Strip-tease domicile, Car Smash, Char d'Assaut) |
+| 3. Sleeping giants (P2) | 4-5 sem. | Rédiger 27 pages depuis `p2-sheets/` selon le gabarit |
+| 4. Cold pages (P3) | 2 sem. | Appliquer les décisions de `briefs/P3-DECISIONS.md` (6 à optimiser, 1 fusion, 1 repositionnement) |
+| 5. Schema | 1 sem. | Injecter les 42 JSON-LD de `schema/generated/` dans le `<head>` |
 | 6. Audit | 6-8 sem. | Mesurer GSC : CTR, position, clics |
 
 ## Cas particuliers identifiés
 
-- **Limousine + Hummer Lap Tour** → fusion + redirection 301
+- **Limousine + Hummer Lap Tour** → fusion + redirection 301 (cf. `briefs/P3-DECISIONS.md`)
+- **Hydrospeed → Rafting** : fusion + redirection 301 (cf. `briefs/P3-DECISIONS.md`)
 - **Footbulle vs Football** → vérifier la cannibalisation
 - **9 pages "Optimisée"** dans le statut mais body vide à l'extraction → re-crawler pour vérifier
+- **Fourchettes de prix** dans `generate_jsonld.py` et `generate_p2_sheets.py` : à valider avec le client avant déploiement Schema
