@@ -1,0 +1,128 @@
+{
+  "_comment": "Exemple concret pour la page /activity-category/initiation-tir-shooting-evg. À placer en JSON-LD dans le <head>.",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.crazy-evg.com/activity-category/initiation-tir-shooting-evg#service",
+      "name": "Stand de tir EVG",
+      "alternateName": "stand de tir evg",
+      "description": "Offrez un stand de tir EVG à votre pote : AK47, Glock, Magnum 357 à balles réelles. 9 destinations, devis 1 min. Sensations garanties pour son enterrement.",
+      "serviceType": "Activité EVG",
+      "category": "Enterrement de vie de garçon",
+      "image": "https://www.crazy-evg.com/img/activities/shooting-evg.jpg",
+      "url": "https://www.crazy-evg.com/activity-category/initiation-tir-shooting-evg",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://www.crazy-evg.com/#organization",
+        "name": "Crazy-EVG",
+        "url": "https://www.crazy-evg.com",
+        "logo": "https://www.crazy-evg.com/logo.png",
+        "telephone": "+33176215730",
+        "email": "contact@crazy-evg.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8 rue du Faubourg Poissonnière",
+          "postalCode": "75010",
+          "addressLocality": "Paris",
+          "addressCountry": "FR"
+        }
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Varsovie" },
+        { "@type": "City", "name": "Bucarest" },
+        { "@type": "City", "name": "Berlin" },
+        { "@type": "City", "name": "Prague" },
+        { "@type": "City", "name": "Bratislava" },
+        { "@type": "City", "name": "Budapest" },
+        { "@type": "City", "name": "Cracovie" },
+        { "@type": "City", "name": "Paris" },
+        { "@type": "City", "name": "Vilnius" }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Groupe d'amis - Enterrement de vie de garçon",
+        "suggestedMinAge": 18
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": "39",
+        "highPrice": "129",
+        "offerCount": "9",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.crazy-evg.com/activity-category/initiation-tir-shooting-evg#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien coûte un stand de tir pour un EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le tarif d'un stand de tir EVG démarre à environ 39 € par personne pour une formule courte (3 armes, environ 30 munitions) et peut atteindre 120 € pour les packs premium incluant fusil sniper et mitraillette type AK47. Le prix dépend principalement de la destination et du nombre d'armes/munitions choisi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle est la durée d'une session de tir EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Une session de tir dure entre 1h et 2h selon la formule choisie, briefing sécurité inclus. Comptez environ 1h pour un pack de 3 armes, 1h30 pour 5 armes, et jusqu'à 2h pour un pack premium avec sniper."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il un niveau particulier pour faire un stand de tir EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aucun niveau requis. Toutes nos sessions sont encadrées par un instructeur professionnel qui assure le briefing sécurité, le maniement des armes et l'accompagnement pendant chaque tir. L'activité est accessible aux débutants comme aux initiés."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "À partir de combien de personnes peut-on réserver un stand de tir EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La plupart de nos partenaires acceptent les groupes à partir de 4 personnes. Au-delà de 12 participants, nous organisons généralement deux créneaux successifs pour garantir le confort et la sécurité de tous."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que faut-il prévoir pour un stand de tir EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Une pièce d'identité valide est obligatoire. Le stand fournit toutes les armes, munitions, casque antibruit et lunettes de protection. Prévoyez des vêtements couvrants et des chaussures fermées. La consommation d'alcool est strictement interdite avant la session."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dans quelles villes peut-on faire un stand de tir pour un EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le stand de tir EVG est disponible dans 9 destinations Crazy-EVG : Varsovie, Bucarest, Berlin, Prague, Bratislava, Budapest, Cracovie, Paris et Vilnius. Les destinations d'Europe de l'Est offrent généralement le plus large choix d'armes (AK47, sniper) à tarif compétitif."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment réserver un stand de tir pour un EVG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Demandez un devis en 1 minute sur Crazy-EVG. Notre équipe revient vers vous sous 24h avec un programme sur mesure et un tarif détaillé pour votre groupe."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.crazy-evg.com/activity-category/initiation-tir-shooting-evg#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.crazy-evg.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Activités EVG", "item": "https://www.crazy-evg.com/activites-evg" },
+        { "@type": "ListItem", "position": 3, "name": "Stand de tir EVG", "item": "https://www.crazy-evg.com/activity-category/initiation-tir-shooting-evg" }
+      ]
+    }
+  ]
+}
